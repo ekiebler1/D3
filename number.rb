@@ -2,10 +2,10 @@ require 'sinatra'
 require 'sinatra/reloader'
 
 def int_check(n)
-  if n != 0
-    n
-  else
+  if n == 0 || n == nil
     1
+  else
+    n
   end
 end
 
