@@ -1,6 +1,14 @@
 require 'sinatra'
 require 'sinatra/reloader'
 
+def int_check(n)
+  if n != 0
+    n
+  else
+    1
+  end
+end
+
 def fibonacci(n)
   if n == 1
     1
@@ -22,12 +30,14 @@ get '/' do
   
   #Calculate Fibonacci
   if(!fib.nil?)
-    fib_result = fibonacci(fib.to_i)
+    num = int_check(fib.to_i)
+    fib_result = fibonacci(num)
   end
   
   #Calculate Factorial
   if(!fact.nil?)
-    fact_result = factorial(fact.to_i)
+    num = int_check(fact.to_i)
+    fact_result = factorial(num)
   end
   
   #Upcase name
