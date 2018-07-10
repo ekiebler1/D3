@@ -2,10 +2,10 @@ require 'sinatra'
 require 'sinatra/reloader'
 
 def int_check(n)
-  if n == 0 || n == nil
-    1
+  if n.to_i.to_s == n
+    n.to_i
   else
-    n
+    1
   end
 end
 
@@ -30,13 +30,13 @@ get '/' do
   
   #Calculate Fibonacci
   if(!fib.nil?)
-    num = int_check(fib.to_i)
+    num = int_check(fib)
     fib_result = fibonacci(num)
   end
   
   #Calculate Factorial
   if(!fact.nil?)
-    num = int_check(fact.to_i)
+    num = int_check(fact)
     fact_result = factorial(num)
   end
   
