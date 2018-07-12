@@ -33,7 +33,6 @@ get '/' do
   #Calculate Fibonacci
   if(!fib.nil?)
     num = int_check(fib)
-    puts num
     fib_result = fibonacci(num)
   end
   
