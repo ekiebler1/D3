@@ -6,6 +6,8 @@ def int_check(n)
     1
   elsif n.to_i.to_s == n
     n.to_i
+  elsif n.to_s == ''
+    nil
   else
     1
   end
@@ -33,18 +35,34 @@ get '/' do
   #Calculate Fibonacci
   if(!fib.nil?)
     num = int_check(fib)
-    fib_result = fibonacci(num)
+    if !num.nil?
+      fib_result = fibonacci(num)
+    else
+      #make fib nil so page doesn't render to result
+      fib = nil 
+    end
   end
   
   #Calculate Factorial
   if(!fact.nil?)
     num = int_check(fact)
-    fact_result = factorial(num)
+    if !num.nil?
+      fact_result = factorial(num)
+    else
+      #make it so page doesn't render empty input
+      fact = nil
+    end
   end
   
   #Upcase name
   if(!n.nil?)
-    n = n.to_s.upcase
+    puts n
+    if(n.to_s == '')
+      #make it so page doesn't render empty input
+      n = nil
+    else
+      n = n.to_s.upcase
+    end
   end
     
   #Render Page

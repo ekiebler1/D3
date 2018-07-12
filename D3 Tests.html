@@ -133,7 +133,7 @@
 </tr>
 <tr><td>click</td><td>//input[@value='Calculate']<datalist><option>//input[@value='Calculate']</option><option>//input[2]</option><option>css=input[type="submit"]</option></datalist></td><td></td>
 </tr>
-<tr><td></td><td><datalist><option></option></datalist></td><td></td>
+<tr><td>assertText</td><td>//p<datalist><option>//p</option></datalist></td><td>Fibonacci(4.7) = 1</td>
 </tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
@@ -340,78 +340,6 @@
 <tr><td>open</td><td>http://localhost:4567/hotdog<datalist><option>http://localhost:4567/hotdog</option></datalist></td><td></td>
 </tr>
 <tr><td>click</td><td>//body<datalist><option>//body</option><option>css=body</option></datalist></td><td></td>
-</tr>
-</tbody></table>
-<table cellpadding="1" cellspacing="1" border="1">
-<thead>
-<tr><td rowspan="1" colspan="3">Fibo Test Other Inputs</td></tr>
-</thead>
-<tbody>
-<tr><td>open</td><td>http://localhost:4567/<datalist><option>http://localhost:4567/</option></datalist></td><td></td>
-</tr>
-<tr><td>click</td><td>name=fib<datalist><option>name=fib</option><option>//input[@name='fib']</option><option>//input</option><option>css=input[name="fib"]</option></datalist></td><td></td>
-</tr>
-<tr><td>type</td><td>name=fib<datalist><option>name=fib</option><option>//input[@name='fib']</option><option>//input</option><option>css=input[name="fib"]</option></datalist></td><td>5</td>
-</tr>
-<tr><td>click</td><td>name=fact<datalist><option>name=fact</option><option>//input[@name='fact']</option><option>//form[2]/input</option><option>css=input[name="fact"]</option></datalist></td><td></td>
-</tr>
-<tr><td>type</td><td>name=fact<datalist><option>name=fact</option><option>//input[@name='fact']</option><option>//form[2]/input</option><option>css=input[name="fact"]</option></datalist></td><td>7</td>
-</tr>
-<tr><td>click</td><td>//body<datalist><option>//body</option><option>css=body</option></datalist></td><td></td>
-</tr>
-<tr><td>click</td><td>name=n<datalist><option>name=n</option><option>//input[@name='n']</option><option>//form[3]/input</option><option>css=input[name="n"]</option></datalist></td><td></td>
-</tr>
-<tr><td>type</td><td>name=n<datalist><option>name=n</option><option>//input[@name='n']</option><option>//form[3]/input</option><option>css=input[name="n"]</option></datalist></td><td>steve</td>
-</tr>
-<tr><td>click</td><td>name=fib<datalist><option>name=fib</option><option>//input[@name='fib']</option><option>//input</option><option>css=input[name="fib"]</option></datalist></td><td></td>
-</tr>
-<tr><td>click</td><td>//input[@value='Calculate']<datalist><option>//input[@value='Calculate']</option><option>//input[2]</option><option>css=input[type="submit"]</option></datalist></td><td></td>
-</tr>
-</tbody></table>
-<table cellpadding="1" cellspacing="1" border="1">
-<thead>
-<tr><td rowspan="1" colspan="3">Fact Test Other Inputs</td></tr>
-</thead>
-<tbody>
-<tr><td>open</td><td>http://localhost:4567/<datalist><option>http://localhost:4567/</option></datalist></td><td></td>
-</tr>
-<tr><td>click</td><td>name=fib<datalist><option>name=fib</option><option>//input[@name='fib']</option><option>//input</option><option>css=input[name="fib"]</option></datalist></td><td></td>
-</tr>
-<tr><td>type</td><td>name=fib<datalist><option>name=fib</option><option>//input[@name='fib']</option><option>//input</option><option>css=input[name="fib"]</option></datalist></td><td>5</td>
-</tr>
-<tr><td>click</td><td>//body<datalist><option>//body</option><option>css=body</option></datalist></td><td></td>
-</tr>
-<tr><td>click</td><td>name=fact<datalist><option>name=fact</option><option>//input[@name='fact']</option><option>//form[2]/input</option><option>css=input[name="fact"]</option></datalist></td><td></td>
-</tr>
-<tr><td>type</td><td>name=fact<datalist><option>name=fact</option><option>//input[@name='fact']</option><option>//form[2]/input</option><option>css=input[name="fact"]</option></datalist></td><td>7</td>
-</tr>
-<tr><td>click</td><td>name=n<datalist><option>name=n</option><option>//input[@name='n']</option><option>//form[3]/input</option><option>css=input[name="n"]</option></datalist></td><td></td>
-</tr>
-<tr><td>type</td><td>name=n<datalist><option>name=n</option><option>//input[@name='n']</option><option>//form[3]/input</option><option>css=input[name="n"]</option></datalist></td><td>steve</td>
-</tr>
-<tr><td>click</td><td>xpath=(//input[@value='Calculate'])[2]<datalist><option>xpath=(//input[@value='Calculate'])[2]</option><option>//form[2]/input[2]</option></datalist></td><td></td>
-</tr>
-</tbody></table>
-<table cellpadding="1" cellspacing="1" border="1">
-<thead>
-<tr><td rowspan="1" colspan="3">Hi Test Other Inputs</td></tr>
-</thead>
-<tbody>
-<tr><td>open</td><td>http://localhost:4567/<datalist><option>http://localhost:4567/</option></datalist></td><td></td>
-</tr>
-<tr><td>click</td><td>name=fib<datalist><option>name=fib</option><option>//input[@name='fib']</option><option>//input</option><option>css=input[name="fib"]</option></datalist></td><td></td>
-</tr>
-<tr><td>type</td><td>name=fib<datalist><option>name=fib</option><option>//input[@name='fib']</option><option>//input</option><option>css=input[name="fib"]</option></datalist></td><td>5</td>
-</tr>
-<tr><td>click</td><td>name=fact<datalist><option>name=fact</option><option>//input[@name='fact']</option><option>//form[2]/input</option><option>css=input[name="fact"]</option></datalist></td><td></td>
-</tr>
-<tr><td>type</td><td>name=fact<datalist><option>name=fact</option><option>//input[@name='fact']</option><option>//form[2]/input</option><option>css=input[name="fact"]</option></datalist></td><td>7</td>
-</tr>
-<tr><td>click</td><td>name=n<datalist><option>name=n</option><option>//input[@name='n']</option><option>//form[3]/input</option><option>css=input[name="n"]</option></datalist></td><td></td>
-</tr>
-<tr><td>type</td><td>name=n<datalist><option>name=n</option><option>//input[@name='n']</option><option>//form[3]/input</option><option>css=input[name="n"]</option></datalist></td><td>Steve</td>
-</tr>
-<tr><td>click</td><td>//input[@value='Hi']<datalist><option>//input[@value='Hi']</option><option>//form[3]/input[2]</option></datalist></td><td></td>
 </tr>
 </tbody></table>
 </body>
