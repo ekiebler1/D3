@@ -2,7 +2,9 @@ require 'sinatra'
 require 'sinatra/reloader'
 
 def int_check(n)
-  if n.to_i.to_s == n
+  if n.to_i < 0
+    1
+  elsif n.to_i.to_s == n
     n.to_i
   else
     1
@@ -31,6 +33,7 @@ get '/' do
   #Calculate Fibonacci
   if(!fib.nil?)
     num = int_check(fib)
+    puts num
     fib_result = fibonacci(num)
   end
   
